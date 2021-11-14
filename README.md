@@ -5,3 +5,5 @@ If you create a `ScrollView` that contains an `NSView` that intersects the scrol
 This bug appears both with custom `NSViewRepresentable`-conformances and built-in SwiftUI views that wrap `NSView`s, like `Button` (which wraps `NSButton`.)
 
 The two-finger touchpad scroll gesture works fine — it's clicking and dragging scrollbars that does not. The "Show scroll bars" preference must also set so that macOS only shows scrollbars when you're actively scrolling (i.e. via two-finger gesture). In other words, having that preference set to "Always" will prevent you from seeing this bug.
+
+Filed as [FB9757718](https://openradar.appspot.com/radar?id=5004300560367616).
